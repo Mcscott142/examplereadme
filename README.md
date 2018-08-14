@@ -1,6 +1,6 @@
 _Build Badges_
 
-Any Badges you have that should be here, e.g. Codeship, TravicCI, whatever.
+Any Badges you have that should be here, e.g. Codeship, TravicCI, whatevah
 
 # Project name
 Product Owner: Joe Example - joe@example.com
