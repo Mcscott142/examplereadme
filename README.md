@@ -58,6 +58,13 @@ _What's the pain point? Why does this thing need to be built?_
 ### What is the core loop?
 _What should this thing do in a nutshell. No bells or whistles, this is what the app does on the most basic level_
 
+## Nouns and Verbs
+### Nouns
+The who and what of the project. What user types live in this project? Admins, Customers etc. Maybe there's a piece of a user profile that could provide some context. Add it Here. 
+
+### Verbs
+The actions users take within the application. Maybe you buy something or connect with a friend. List those actuons here. 
+
 ## Team
 
 Role | Person | Email
