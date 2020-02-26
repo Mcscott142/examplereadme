@@ -87,3 +87,41 @@ _What's the stack Ruby on Rails? Elixr? JS Front End with Mongo DB? List it all 
 
 ### Build Set Up
 _Step by step process of getting this thing running. Hopefully you have an install script. If not then get super detailed right here_
+
+## Setup instructions
+
+**Prerequisites (as of 11/7)**:
+- Ruby 2.1.10
+- Elasticsearch 1.7 -- (instructions)[https://www.elastic.co/guide/en/elasticsearch/reference/1.7/_installation.html]
+
+### 1. Install dependencies
+
+`$ ./bin/setup`
+
+### 2. Set environment variables
+
+Create a `.env` file and add the contents of `.env.example`. Get any missing values from Heroku or another dev. Open a new terminal to load the new env vars.
+
+### 4. Run the server
+
+```
+$ ./bin/start
+```
+
+`http://localhost:3000` will take you to the Mainsite (Maritant).
+
+`http://lvh.me:3000` will take you to the Scurlock minisite.
+
+### 5. Run tests
+
+```
+bundle exec rspec
+```
+
+If all your tests are failing with `PG::UndefinedTable` errors, run `bundle exec rake db test:prepare` and try again.
+
+## run load tests
+
+ - disable rack_attack in config
+ - install `locust.io` load testing software.
+ - run the locustfile in the [devops directory](devops/locustfile.py)
